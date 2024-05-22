@@ -1,0 +1,214 @@
+:root {
+    --main-bg-color: #d5daf1;
+    --main-text-color: rgb(0, 0, 0);
+    --main-accent-color: #000000;
+    --secondary-bg-color: #072169ce;
+    --secondary-text-color: rgba(255, 255, 255, 0.842);
+    --button-hover-color: #ffcc00;
+}
+
+body {
+    background:url("imagens/background-site.jpg");
+    
+}
+
+ .informativo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #db1811;
+    font-size: small;
+    padding: 50px;
+}
+header {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: 115px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    margin-left: 40;
+}
+
+nav ul li a {
+    color: var(--main-accent-color);
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+
+
+.search-container {
+    text-align: center;
+}
+
+.search-container input[type="text"],
+.search-container button {
+    padding: 10px 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.carousel {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.slide img {
+    max-width: 100%;
+    height: 350px;
+    cursor: pointer;
+}
+
+
+
+.main-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: var(--main-text-color);
+    font-size: xx-large;
+    padding: 50px;
+}
+
+.videos {
+    padding: 60px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.social-links a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.contact-info {
+    color: black;
+    text-decoration: none;
+    display: flex;           
+    gap: 150px;              
+}
+
+.contact-info ul {
+    list-style: none;       
+    padding: 0;             
+    margin: 0;              
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;    
+}
+
+.contact-info a {
+    color: black;            
+    text-decoration: none; 
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+  
+.caixa { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px; 
+    background-color: rgba(230, 38, 12, 0.747);
+    border-radius: 15px;
+    font-size: 16px;
+    border: 2px solid black; 
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px; 
+    margin-right: 15px;
+    transition: background-color 0.3s;
+    width: 120px; 
+}
+
+.caixa a {
+    text-decoration: none;
+    color: black;
+}
+
+.caixa:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .search-container {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
